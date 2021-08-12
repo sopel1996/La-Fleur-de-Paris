@@ -19,6 +19,10 @@
     font-weight: 700;
     font-size: toRem($size_px);
 }
+@mixin IBMPlexText($size_px) {
+    font-family: "IBMPlexText",sans-serif;
+    font-size: toRem($size_px);
+}
 @mixin AlmoniLight($size_px) {
     font-family: "Almoni",sans-serif;
     font-weight: 300;

@@ -6,7 +6,7 @@ $(document).ready(function () {
     columnWidth: ".grid-item",
     itemSelector: ".grid-item",
     isFitWidth: true,
-    gutter: 60
+    gutter: 20
   });
 
 

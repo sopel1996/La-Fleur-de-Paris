@@ -20,6 +20,12 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "IBMPlexText";
+  src: url("/fonts/eot/IBMPlexSansHebrew-Text.eot") format("embedded-opentype"), url("/fonts/otf/IBMPlexSansHebrew-Text.otf") format("openType"), url("/fonts/ttf/IBMPlexSansHebrew-Text.ttf") format("truetype"), url("/fonts/woff/IBMPlexSansHebrew-Text.woff") format("woff"), url("/fonts/woff2/IBMPlexSansHebrew-Text.woff2") format("woff2");
+  /* Super Modern Browsers */
+  font-display: swap;
+}
+@font-face {
   font-family: "Almoni";
   src: url("/fonts/otf/almoni-dl-aaa-light.otf") format("openType");
   /* Super Modern Browsers */
@@ -166,6 +172,7 @@ address {
   font-family: "Almoni", sans-serif;
   font-weight: 300;
   font-size: 20px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -281,6 +288,70 @@ address {
   margin-bottom: 30px;
 }
 
+.sectionSmallBanner {
+  z-index: 5;
+  width: 100%;
+  height: 180px;
+  background-color: #FAEDF2;
+  margin-bottom: 20px;
+}
+.sectionSmallBanner .sectionInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sectionSmallBanner_title {
+  font-family: "Almoni", sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+}
+.sectionSmallBanner_subtitle {
+  font-family: "Almoni", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.sectionCatalog .grid {
+  margin: 0 auto;
+}
+.sectionCatalog .grid-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 275px;
+  height: 466px;
+}
+.sectionCatalog .grid-item a-img {
+  width: 275px;
+  height: 350px;
+  object-fit: cover;
+}
+.sectionCatalog .grid-item a .productTitle {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+.sectionCatalog .grid-item a .productPrice {
+  font-family: "IBMPlexText", sans-serif;
+  font-size: 22px;
+  color: #A52357;
+}
+.sectionCatalog .grid-item a .productMore {
+  display: block;
+  color: #000;
+  font-family: "Almoni", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.sectionCatalog .grid-item a .productMore:after {
+  margin-right: 10px;
+  content: ">";
+}
+
 .sectionCards {
   margin: 10px 0;
 }
@@ -290,18 +361,11 @@ address {
   align-items: center;
   justify-content: space-between;
 }
-.sectionCards_cards {
-  margin-top: 40px;
-  width: 100%;
-  height: 570px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-content: space-between;
+.sectionCards .grid {
+  margin: 40px auto 10px auto;
 }
-.sectionCards_cards-item {
+.sectionCards .grid-item {
+  margin-bottom: 20px;
   font-family: "IBMPlex", sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -315,35 +379,35 @@ address {
   justify-content: flex-end;
   padding-bottom: 30px;
 }
-.sectionCards_cards-item:nth-child(1) {
+.sectionCards .grid-item:nth-child(1) {
   background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
-.sectionCards_cards-item:nth-child(2) {
+.sectionCards .grid-item:nth-child(2) {
   background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
-.sectionCards_cards-item:nth-child(3) {
+.sectionCards .grid-item:nth-child(3) {
   background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
-.sectionCards_cards-item:nth-child(4) {
+.sectionCards .grid-item:nth-child(4) {
   background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
-.sectionCards_cards-item:nth-child(5) {
+.sectionCards .grid-item:nth-child(5) {
   background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
-.sectionCards_cards-item:nth-child(6) {
+.sectionCards .grid-item:nth-child(6) {
   background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
-.sectionCards_cards-item:nth-child(7) {
+.sectionCards .grid-item:nth-child(7) {
   background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
-.sectionCards_cards-item:nth-child(8) {
+.sectionCards .grid-item:nth-child(8) {
   background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
 }
