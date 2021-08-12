@@ -1,3 +1,45 @@
+@font-face {
+  font-family: "IBMPlex";
+  src: url("/fonts/eot/IBMPlexSansHebrew-Light.eot") format("embedded-opentype"), url("/fonts/otf/IBMPlexSansHebrew-Light.otf") format("openType"), url("/fonts/ttf/IBMPlexSansHebrew-Light.ttf") format("truetype"), url("/fonts/woff/IBMPlexSansHebrew-Light.woff") format("woff"), url("/fonts/woff2/IBMPlexSansHebrew-Light.woff2") format("woff2");
+  /* Super Modern Browsers */
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBMPlex";
+  src: url("/fonts/eot/IBMPlexSansHebrew-Regular.eot") format("embedded-opentype"), url("/fonts/otf/IBMPlexSansHebrew-Regular.otf") format("openType"), url("/fonts/ttf/IBMPlexSansHebrew-Regular.ttf") format("truetype"), url("/fonts/woff/IBMPlexSansHebrew-Regular.woff") format("woff"), url("/fonts/woff2/IBMPlexSansHebrew-Regular.woff2") format("woff2");
+  /* Super Modern Browsers */
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBMPlex";
+  src: url("/fonts/eot/IBMPlexSansHebrew-Bold.eot") format("embedded-opentype"), url("/fonts/otf/IBMPlexSansHebrew-Bold.otf") format("openType"), url("/fonts/ttf/IBMPlexSansHebrew-Bold.ttf") format("truetype"), url("/fonts/woff/IBMPlexSansHebrew-Bold.woff") format("woff"), url("/fonts/woff2/IBMPlexSansHebrew-Bold.woff2") format("woff2");
+  /* Super Modern Browsers */
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Almoni";
+  src: url("/fonts/otf/almoni-dl-aaa-light.otf") format("openType");
+  /* Super Modern Browsers */
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Almoni";
+  src: url("/fonts/otf/almoni-dl-aaa-regular.otf") format("openType");
+  /* Super Modern Browsers */
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Almoni";
+  src: url("/fonts/otf/almoni-dl-aaa-bold.otf") format("openType");
+  /* Super Modern Browsers */
+  font-weight: 700;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -59,6 +101,9 @@ body {
   border-radius: 23px;
   cursor: pointer;
   background-color: #82BCB0;
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
 .btn:active {
   background-color: #6b9b91;
@@ -66,6 +111,12 @@ body {
 
 address {
   font-style: normal;
+}
+
+.title {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 500;
+  font-size: 44px;
 }
 
 .sectionHeader {
@@ -84,6 +135,9 @@ address {
   justify-content: space-between;
 }
 .sectionHeader_firstLine-text {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
   width: 130px;
   list-style: none;
   display: flex;
@@ -109,6 +163,9 @@ address {
   height: 30px;
 }
 .sectionHeader_firstLine-phoneSearch .phone {
+  font-family: "Almoni", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -130,6 +187,9 @@ address {
   background-size: cover;
 }
 .sectionHeader_firstLine-phoneSearch .search {
+  font-family: "Almoni", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
   position: relative;
 }
 .sectionHeader_firstLine-phoneSearch .search .searchField {
@@ -168,6 +228,9 @@ address {
   height: 92px;
 }
 .sectionHeader_secondLine-nav {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   width: 896px;
   display: flex;
   flex-direction: row;
@@ -239,6 +302,9 @@ address {
   align-content: space-between;
 }
 .sectionCards_cards-item {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
   width: 275px;
   height: 275px;
   z-index: 10;
@@ -248,16 +314,6 @@ address {
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 30px;
-}
-.sectionCards_cards-item::before {
-  content: "";
-  position: absolute;
-  z-index: 5;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.6);
 }
 .sectionCards_cards-item:nth-child(1) {
   background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
@@ -290,6 +346,62 @@ address {
 .sectionCards_cards-item:nth-child(8) {
   background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
+}
+
+.sectionAbout {
+  margin: 20px 0;
+}
+.sectionAbout .sectionInner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionAbout_content {
+  width: 100%;
+  height: 100%;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sectionAbout_content-collage {
+  position: relative;
+  width: 320px;
+  height: 420px;
+}
+.sectionAbout_content-collage .collageLeftTopImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sectionAbout_content-collage .collageLeftBottomImg {
+  position: absolute;
+  bottom: 0;
+  left: 56px;
+}
+.sectionAbout_content-collage .collageCenterImg {
+  position: absolute;
+  top: 83px;
+  left: 112px;
+}
+.sectionAbout_content-collage .collageRightTopImg {
+  position: absolute;
+  top: 0;
+  left: 320px;
+}
+.sectionAbout_content-text {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  height: 336px;
+  width: 568px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .sectionForm {
@@ -330,9 +442,9 @@ address {
   border: 1px solid #D2D2D2;
   color: #7a7a7a;
   text-align: right;
-  font-family: "IBMPlex";
+  font-family: "IBMPlex", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   padding: 15px;
   border-radius: 20px;
 }
@@ -340,9 +452,9 @@ address {
   color: #B9B9B9;
 }
 .sectionForm .form .comments {
-  font-family: "IBMPlex";
+  font-family: "IBMPlex", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   padding: 12px;
   width: 100%;
   height: 80px;
@@ -374,9 +486,15 @@ address {
   height: 40px;
 }
 .sectionInstagram_text {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 500;
+  font-size: 44px;
   color: #4E3C43;
 }
 .sectionInstagram .btnBrown {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
   background-color: #4E3C43;
   color: #fff;
   outline: none;
@@ -403,8 +521,18 @@ address {
   align-items: center;
   justify-content: space-between;
 }
-.sectionSubscribe_text .title {
+.sectionSubscribe_text-title {
+  color: #fff;
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
   margin-bottom: 10px;
+}
+.sectionSubscribe_text-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
 }
 .sectionSubscribe_email {
   width: 385px;
@@ -416,6 +544,9 @@ address {
   padding: 10px 20px;
 }
 .sectionSubscribe_form {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   position: relative;
 }
 .sectionSubscribe_form .sendSubscribe {
@@ -438,6 +569,26 @@ address {
   align-items: center;
   justify-content: space-between;
 }
+.sectionFooter .footerTitle {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 33px;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.sectionFooter .footerTitle::after {
+  display: block;
+  margin-top: 7px;
+  position: absolute;
+  width: 5%;
+  content: "";
+  border: 1px solid #FDC5BC;
+}
 .sectionFooter .sectionFooter_firstLine {
   color: rgba(255, 255, 255, 0.6);
   border: none;
@@ -456,6 +607,9 @@ address {
   height: 100%;
 }
 .sectionFooter .sectionFooter_firstLine .footerList li a {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -463,23 +617,6 @@ address {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-.sectionFooter .sectionFooter_firstLine .title {
-  color: #fff;
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  width: 100%;
-  height: 33px;
-  font-size: 22px;
-  margin-bottom: 25px;
-}
-.sectionFooter .sectionFooter_firstLine .title::after {
-  display: block;
-  margin-top: 7px;
-  position: absolute;
-  width: 5%;
-  content: "";
-  border: 1px solid #FDC5BC;
 }
 .sectionFooter .sectionFooter_firstLine-laFlor {
   height: 100%;
@@ -501,10 +638,16 @@ address {
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom: 25px;
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
 }
 .sectionFooter .sectionFooter_firstLine-contacts .workTime a,
 .sectionFooter .sectionFooter_firstLine-contacts .location a,
 .sectionFooter .sectionFooter_firstLine-contacts .contacts a {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
 .sectionFooter .sectionFooter_firstLine-contacts .workTime .contactsIcon,
@@ -537,6 +680,10 @@ address {
   justify-content: space-between;
 }
 .sectionFooter .sectionFooter_firstLine-feedback .footerForm-input {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #B9B9B9;
   width: 100%;
   height: 40px;
   margin-bottom: 15px;
@@ -568,6 +715,9 @@ address {
   object-fit: cover;
 }
 .sectionFooter .sectionFooter_secondLine .realmediaLogo .logoText {
+  font-family: "Almoni", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
   color: #fff;
 }
 .sectionFooter .sectionFooter_secondLine .realmediaLogo .logoText::after {
@@ -577,5 +727,8 @@ address {
   margin: 0 10px;
 }
 .sectionFooter .sectionFooter_secondLine .copyright {
+  font-family: "Almoni", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
   color: #FFF;
 }

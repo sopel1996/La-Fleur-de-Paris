@@ -8,6 +8,24 @@
         align-items: center;
         justify-content: space-between;
     }
+    .footerTitle{
+        @include IBMPlexBold(22);
+        color: #fff;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255,0.1);
+            width: 100%;
+            height: toRem(33);
+            font-size: toRem(22);
+            margin-bottom: toRem(25);
+            &::after{
+                display: block;
+                margin-top: toRem(7);
+                position: absolute;
+                width: 5%;
+                content: "";
+                border: 1px solid #FDC5BC;
+            } 
+    }
     .sectionFooter_firstLine{
         color: rgba(255, 255, 255, 0.6);
         border: none;
@@ -25,6 +43,7 @@
             height: 100%;
             li{
                 a{
+                    @include IBMPlexLight(16);
                     color: rgba(255, 255, 255, 0.6);
                     border: none;
                     border-bottom: 1px solid rgba(255, 255, 255,0.1);
@@ -36,21 +55,7 @@
             }
         }
         .title{
-            color: #fff;
-            border: none;
-            border-bottom: 1px solid rgba(255, 255, 255,0.1);
-            width: 100%;
-            height: toRem(33);
-            font-size: toRem(22);
-            margin-bottom: toRem(25);
-            &::after{
-                display: block;
-                margin-top: toRem(7);
-                position: absolute;
-                width: 5%;
-                content: "";
-                border: 1px solid #FDC5BC;
-            } 
+            
         }
         &-laFlor{
             height: 100%;
@@ -72,7 +77,9 @@
                 align-items: flex-start;
                 justify-content: flex-start;
                 margin-bottom: toRem(25);
-                a{
+                @include IBMPlexLight(16);
+                a{  
+                    @include IBMPlexLight(16);
                     color: rgba(255, 255, 255, 0.6);
 
                 }
@@ -106,6 +113,8 @@
                 align-items: center;
                 justify-content: space-between;
                 &-input{
+                    @include IBMPlexLight(16);
+                    color: #B9B9B9;
                     width: 100%;
                     height: toRem(40);
                     margin-bottom: toRem(15);
@@ -143,7 +152,7 @@
                 object-fit: cover
             }
             .logoText{
-                // @include AlmoniLight(15);
+                @include AlmoniLight(15);
                 color: #fff;
                 &::after{
                     content: "";
@@ -154,8 +163,8 @@
             }
         }
         .copyright{
-            // @include AlmoniRegular(18);
-                color: #FFF;
+            @include AlmoniRegular(16);
+            color: #FFF;
         }
     }
 }

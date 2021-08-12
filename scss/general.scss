@@ -51,6 +51,7 @@ body{
     border-radius: toRem(23);
     cursor: pointer;
     background-color: #82BCB0;
+    @include IBMPlexBold(20);
     &:active{
         background-color: #6b9b91;
     }
@@ -58,4 +59,7 @@ body{
 }
 address{
     font-style: normal;
+}
+.title{
+    @include IBMPlexRegular(44);
 }

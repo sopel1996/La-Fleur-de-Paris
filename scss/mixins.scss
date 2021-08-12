@@ -5,12 +5,32 @@
 }
 
 @mixin IBMPlexLight($size_px) {
-    font-family: "IBMPlex";
+    font-family: "IBMPlex",sans-serif;
     font-weight: 300;
     font-size: toRem($size_px);
 }
-@mixin IBMPlexExtraLight($size_px) {
-    font-family: "IBMPlex";
-    font-weight: 100;
+@mixin IBMPlexRegular($size_px) {
+    font-family: "IBMPlex",sans-serif;
+    font-weight: 500;
+    font-size: toRem($size_px);
+}
+@mixin IBMPlexBold($size_px) {
+    font-family: "IBMPlex",sans-serif;
+    font-weight: 700;
+    font-size: toRem($size_px);
+}
+@mixin AlmoniLight($size_px) {
+    font-family: "Almoni",sans-serif;
+    font-weight: 300;
+    font-size: toRem($size_px);
+}
+@mixin AlmoniRegular($size_px) {
+    font-family: "Almoni",sans-serif;
+    font-weight: 500;
+    font-size: toRem($size_px);
+}
+@mixin AlmoniBold($size_px) {
+    font-family: "Almoni",sans-serif;
+    font-weight: 700;
     font-size: toRem($size_px);
 }

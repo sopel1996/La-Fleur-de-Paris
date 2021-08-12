@@ -13,9 +13,11 @@
         height: toRem(40);
     }
     &_text{
+        @include IBMPlexRegular(44);
         color: #4E3C43;
     }
     .btnBrown{
+        @include IBMPlexRegular(20);
         background-color: #4E3C43;
         color: #fff;
         outline: none;

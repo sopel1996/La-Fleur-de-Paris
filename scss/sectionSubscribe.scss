@@ -11,8 +11,14 @@
         justify-content: space-between;
     }
     &_text{
-        .title{
+        &-title{
+            color: #fff;
+            @include IBMPlexBold(34);
             margin-bottom: toRem(10);
+        }
+        &-subtitle{
+            color: rgba(255, 255, 255, 0.7);
+            @include IBMPlexLight(20);
         }
     }
     &_email{
@@ -26,6 +32,7 @@
         // position: relative;
     }
     &_form{
+        @include IBMPlexLight(16);
         position: relative;
         .sendSubscribe{
             background: #fff url("/img/svg/sendFormIcon.svg") 50% 50% no-repeat;
