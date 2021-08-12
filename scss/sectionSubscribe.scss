@@ -1,0 +1,40 @@
+.sectionSubscribe{
+    width: 100%;
+    height: toRem(126);
+    background-color: #82BCB0;
+    text-align: right;
+    .sectionInner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_text{
+        .title{
+            margin-bottom: toRem(10);
+        }
+    }
+    &_email{
+        width: toRem(385);
+        height: toRem(40);
+        background-color: #fff;
+        outline: none;
+        border: none;
+        border-radius: toRem(20);
+        padding: toRem(10) toRem(20);
+        // position: relative;
+    }
+    &_form{
+        position: relative;
+        .sendSubscribe{
+            background: #fff url("/img/svg/sendFormIcon.svg") 50% 50% no-repeat;
+            width: toRem(20);
+            height: toRem(20);
+            outline: none;
+            border: none;
+            position: absolute;
+            top: 25%;
+            left: toRem(20);
+        }
+    }
+}

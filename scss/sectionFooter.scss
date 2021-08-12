@@ -1,0 +1,48 @@
+@import 'mixins.scss';
+.sectionFooter{
+    background-color: #261E21;
+    margin: toRem(40) 0;
+    .sectionInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sectionFooter_firstLine{
+       border: none;
+       border-bottom: 1px solid red;
+    }
+    .sectionFooter_secondLine{
+        width: 100%;
+        height: toRem(100);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .realmediaLogo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .logoImg{
+                width: toRem(90);
+                height: toRem(20);
+                object-fit: cover
+            }
+            .logoText{
+                // @include AlmoniLight(15);
+                color: #fff;
+                &::after{
+                    content: "";
+                    border: none;
+                    border-left: 1px solid #fff;
+                    margin: 0 toRem(10);
+                }
+            }
+        }
+        .copyright{
+            // @include AlmoniRegular(18);
+                color: #FFF;
+        }
+    }
+}

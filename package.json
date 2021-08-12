@@ -1,0 +1,25 @@
+{
+  "name": "la-fleur-de-paris",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sopel1996/La-Fleur-de-Paris.git"
+  },
+  "author": "Sopel & REALMEDIA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sopel1996/La-Fleur-de-Paris/issues"
+  },
+  "homepage": "https://github.com/sopel1996/La-Fleur-de-Paris#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.37.5"
+  }
+}

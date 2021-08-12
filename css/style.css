@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+a,
+a:focus,
+a:visited {
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.sectionInner {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+input {
+  background-clip: padding-box;
+}
+
+._borderNone {
+  border: none !important;
+}
+
+._opacity {
+  opacity: 1 !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHeader {
+  z-index: 20;
+  color: #fff;
+}
+.sectionHeader_firstLine {
+  background-color: #4E3C43;
+  width: 100%;
+  height: 40px;
+}
+.sectionHeader_firstLine .sectionInner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionHeader_firstLine-text {
+  width: 130px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+}
+.sectionHeader_firstLine-text li:first-child {
+  padding-left: 10px;
+}
+.sectionHeader_firstLine-text li:last-child {
+  border: none;
+  border-right: 1px solid #fff;
+  padding-right: 10px;
+}
+.sectionHeader_firstLine-phoneSearch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 392px;
+  height: 30px;
+}
+.sectionHeader_firstLine-phoneSearch .phone {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 20px;
+  width: 163px;
+  height: 100%;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  position: relative;
+  margin-left: 10px;
+}
+.sectionHeader_firstLine-phoneSearch .phone::before {
+  position: absolute;
+  right: 11px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: transparent url(/img/svg/pnoeCall.svg) 50% 50% no-repeat;
+  background-size: cover;
+}
+.sectionHeader_firstLine-phoneSearch .search {
+  position: relative;
+}
+.sectionHeader_firstLine-phoneSearch .search .searchField {
+  width: 220px;
+  height: 27px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #fff;
+}
+.sectionHeader_firstLine-phoneSearch .search .sendSearch {
+  background: transparent url("/img/svg/search.svg") 50% 50% no-repeat;
+  width: 14px;
+  height: 14px;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 25%;
+  left: 10px;
+}
+.sectionHeader_secondLine {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  height: 110px;
+  z-index: 20;
+}
+.sectionHeader_secondLine .sectionInner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionHeader_secondLine-logo {
+  width: 84px;
+  height: 92px;
+}
+.sectionHeader_secondLine-nav a {
+  color: #201A14;
+}
+.sectionHeader_secondLine-userCart {
+  width: 66px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionHeader_secondLine-userCart-cart {
+  background: transparent url(/img/svg/cart.svg) 50% 50% no-repeat;
+  border: 1px solid #346056;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+.sectionHeader_secondLine-userCart-user {
+  background: transparent url(/img/svg/user.svg) 50% 50% no-repeat;
+  border: 1px solid #346056;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+
+.sectionBanner {
+  z-index: 5;
+  width: 100%;
+  height: 514px;
+  background-color: #EBFAF7;
+}
+.sectionBanner .sectionInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sectionBanner_logo {
+  margin-bottom: 30px;
+}
+
+.sectionInstagram {
+  width: 100%;
+  height: 150px;
+  margin: 40px 0;
+}
+.sectionInstagram .sectionInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionInstagram .imgInstagram {
+  width: 40px;
+  height: 40px;
+}
+.sectionInstagram_text {
+  color: #4E3C43;
+}
+.sectionInstagram .btnBrown {
+  background-color: #4E3C43;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  width: 278px;
+  height: 45px;
+}
+
+.sectionSubscribe {
+  width: 100%;
+  height: 126px;
+  background-color: #82BCB0;
+  text-align: right;
+}
+.sectionSubscribe .sectionInner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionSubscribe_text .title {
+  margin-bottom: 10px;
+}
+.sectionSubscribe_email {
+  width: 385px;
+  height: 40px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.sectionSubscribe_form {
+  position: relative;
+}
+.sectionSubscribe_form .sendSubscribe {
+  background: #fff url("/img/svg/sendFormIcon.svg") 50% 50% no-repeat;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 25%;
+  left: 20px;
+}
+
+.sectionFooter {
+  background-color: #261E21;
+  margin: 40px 0;
+}
+.sectionFooter .sectionInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sectionFooter .sectionFooter_firstLine {
+  border: none;
+  border-bottom: 1px solid red;
+}
+.sectionFooter .sectionFooter_secondLine {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionFooter .sectionFooter_secondLine .realmediaLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sectionFooter .sectionFooter_secondLine .realmediaLogo .logoImg {
+  width: 90px;
+  height: 20px;
+  object-fit: cover;
+}
+.sectionFooter .sectionFooter_secondLine .realmediaLogo .logoText {
+  color: #fff;
+}
+.sectionFooter .sectionFooter_secondLine .realmediaLogo .logoText::after {
+  content: "";
+  border: none;
+  border-left: 1px solid #fff;
+  margin: 0 10px;
+}
+.sectionFooter .sectionFooter_secondLine .copyright {
+  color: #FFF;
+}
