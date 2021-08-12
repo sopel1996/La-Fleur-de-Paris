@@ -1,7 +1,7 @@
 .sectionInstagram{
     width: 100%;
     height: toRem(150);
-    margin: toRem(40) 0;
+    margin: toRem(20) 0;
     .sectionInner{
         display: flex;
         flex-direction: column;
@@ -23,6 +23,11 @@
         border-radius: toRem(25);
         width: toRem(278);
         height: toRem(45);
+        cursor: pointer;
+        &:active{
+            background-color: #745863;
+        }
+    
 
     }
 }

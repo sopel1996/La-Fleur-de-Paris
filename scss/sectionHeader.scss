@@ -99,6 +99,11 @@
             height: toRem(92);
         }
         &-nav{
+            width: toRem(896);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
             a{
                 color: #201A14;
             }

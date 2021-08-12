@@ -43,6 +43,31 @@ body {
   flex-direction: column;
 }
 
+.textDecor {
+  width: 140px;
+  height: 17px;
+  background: transparent url(/img/svg/textDecore.svg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 23px;
+  cursor: pointer;
+  background-color: #82BCB0;
+}
+.btn:active {
+  background-color: #6b9b91;
+}
+
+address {
+  font-style: normal;
+}
+
 .sectionHeader {
   z-index: 20;
   color: #fff;
@@ -142,6 +167,13 @@ body {
   width: 84px;
   height: 92px;
 }
+.sectionHeader_secondLine-nav {
+  width: 896px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 .sectionHeader_secondLine-nav a {
   color: #201A14;
 }
@@ -174,6 +206,7 @@ body {
   width: 100%;
   height: 514px;
   background-color: #EBFAF7;
+  margin-bottom: 20px;
 }
 .sectionBanner .sectionInner {
   display: flex;
@@ -185,10 +218,150 @@ body {
   margin-bottom: 30px;
 }
 
+.sectionCards {
+  margin: 10px 0;
+}
+.sectionCards .sectionInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionCards_cards {
+  margin-top: 40px;
+  width: 100%;
+  height: 570px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.sectionCards_cards-item {
+  width: 275px;
+  height: 275px;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 30px;
+}
+.sectionCards_cards-item::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.sectionCards_cards-item:nth-child(1) {
+  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+.sectionCards_cards-item:nth-child(2) {
+  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+.sectionCards_cards-item:nth-child(3) {
+  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+.sectionCards_cards-item:nth-child(4) {
+  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+.sectionCards_cards-item:nth-child(5) {
+  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+.sectionCards_cards-item:nth-child(6) {
+  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+.sectionCards_cards-item:nth-child(7) {
+  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+.sectionCards_cards-item:nth-child(8) {
+  background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.sectionForm {
+  height: 312px;
+  margin: 20px 0;
+}
+.sectionForm .sectionInner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sectionForm .title {
+  color: #201A14;
+}
+.sectionForm .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 544px;
+  height: 205px;
+  margin-top: 40px;
+}
+.sectionForm .formLine {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionForm .form .formsInput {
+  width: 262px;
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #D2D2D2;
+  color: #7a7a7a;
+  text-align: right;
+  font-family: "IBMPlex";
+  font-weight: 300;
+  font-size: 14px;
+  padding: 15px;
+  border-radius: 20px;
+}
+.sectionForm .form .formsInput::placeholder {
+  color: #B9B9B9;
+}
+.sectionForm .form .comments {
+  font-family: "IBMPlex";
+  font-weight: 300;
+  font-size: 14px;
+  padding: 12px;
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #D2D2D2;
+  color: #7a7a7a;
+  text-align: right;
+  resize: none;
+  border-radius: 20px;
+}
+.sectionForm .form .comments::placeholder {
+  color: #B9B9B9;
+}
+
 .sectionInstagram {
   width: 100%;
   height: 150px;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 .sectionInstagram .sectionInner {
   display: flex;
@@ -211,6 +384,10 @@ body {
   border-radius: 25px;
   width: 278px;
   height: 45px;
+  cursor: pointer;
+}
+.sectionInstagram .btnBrown:active {
+  background-color: #745863;
 }
 
 .sectionSubscribe {
@@ -218,6 +395,7 @@ body {
   height: 126px;
   background-color: #82BCB0;
   text-align: right;
+  margin-top: 20px;
 }
 .sectionSubscribe .sectionInner {
   display: flex;
@@ -253,17 +431,122 @@ body {
 
 .sectionFooter {
   background-color: #261E21;
-  margin: 40px 0;
 }
 .sectionFooter .sectionInner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .sectionFooter .sectionFooter_firstLine {
+  color: rgba(255, 255, 255, 0.6);
   border: none;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sectionFooter .sectionFooter_firstLine .footerList {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+}
+.sectionFooter .sectionFooter_firstLine .footerList li a {
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sectionFooter .sectionFooter_firstLine .title {
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 33px;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.sectionFooter .sectionFooter_firstLine .title::after {
+  display: block;
+  margin-top: 7px;
+  position: absolute;
+  width: 5%;
+  content: "";
+  border: 1px solid #FDC5BC;
+}
+.sectionFooter .sectionFooter_firstLine-laFlor {
+  height: 100%;
+  width: 215px;
+}
+.sectionFooter .sectionFooter_firstLine-products {
+  height: 100%;
+  width: 215px;
+}
+.sectionFooter .sectionFooter_firstLine-contacts {
+  height: 100%;
+  width: 278px;
+}
+.sectionFooter .sectionFooter_firstLine-contacts .workTime,
+.sectionFooter .sectionFooter_firstLine-contacts .location,
+.sectionFooter .sectionFooter_firstLine-contacts .contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+.sectionFooter .sectionFooter_firstLine-contacts .workTime a,
+.sectionFooter .sectionFooter_firstLine-contacts .location a,
+.sectionFooter .sectionFooter_firstLine-contacts .contacts a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.sectionFooter .sectionFooter_firstLine-contacts .workTime .contactsIcon,
+.sectionFooter .sectionFooter_firstLine-contacts .location .contactsIcon,
+.sectionFooter .sectionFooter_firstLine-contacts .contacts .contactsIcon {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+.sectionFooter .sectionFooter_firstLine-contacts .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sectionFooter .sectionFooter_firstLine-contacts .socialIcon {
+  margin-right: 20px;
+}
+.sectionFooter .sectionFooter_firstLine-contacts .socialIcon:first-child {
+  margin-right: 0;
+}
+.sectionFooter .sectionFooter_firstLine-feedback {
+  height: 100%;
+  width: 390px;
+}
+.sectionFooter .sectionFooter_firstLine-feedback .footerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionFooter .sectionFooter_firstLine-feedback .footerForm-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.sectionFooter .sectionFooter_firstLine-feedback .footerForm-input:nth-child(4) {
+  margin-bottom: 20px;
 }
 .sectionFooter .sectionFooter_secondLine {
   width: 100%;

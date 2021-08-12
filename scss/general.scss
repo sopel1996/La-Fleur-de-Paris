@@ -36,3 +36,26 @@ body{
     display: flex;
     flex-direction: column;
 }
+.textDecor{
+    width: toRem(140);
+    height: toRem(17);
+    background: transparent url(/img/svg/textDecore.svg) 50% 50% no-repeat;
+    background-size: cover;
+}
+.btn{
+    width: 100%;
+    height: toRem(45);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: toRem(23);
+    cursor: pointer;
+    background-color: #82BCB0;
+    &:active{
+        background-color: #6b9b91;
+    }
+
+}
+address{
+    font-style: normal;
+}
