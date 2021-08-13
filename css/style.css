@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "IBMPlex";
   src: url("/fonts/eot/IBMPlexSansHebrew-Light.eot") format("embedded-opentype"), url("/fonts/otf/IBMPlexSansHebrew-Light.otf") format("openType"), url("/fonts/ttf/IBMPlexSansHebrew-Light.ttf") format("truetype"), url("/fonts/woff/IBMPlexSansHebrew-Light.woff") format("woff"), url("/fonts/woff2/IBMPlexSansHebrew-Light.woff2") format("woff2");
@@ -410,6 +411,237 @@ address {
 .sectionCards .grid-item:nth-child(8) {
   background: transparent url(/img/png/cardBg.png) 50% 50% no-repeat;
   background-size: cover;
+}
+
+/* Для Chrome */
+.sectionProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionProduct_item {
+  width: 100%;
+  padding-bottom: 30px;
+  margin: 40px 0;
+  border: none;
+  border-bottom: 1px solid #FFCC99;
+}
+.sectionProduct_item .sectionInner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionProduct_item_img {
+  width: 500px;
+  height: 616px;
+  background: transparent url(/img/png/productImg.png) 50% 50% no-repeat;
+  background-size: cover;
+}
+.sectionProduct_item_content {
+  width: 632px;
+  height: 616px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sectionProduct_item_content .breadcrumb {
+  width: 100%;
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #959595;
+  margin-bottom: 10px;
+}
+.sectionProduct_item_content-titlePrice {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.sectionProduct_item_content-titlePrice-title {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #201A14;
+}
+.sectionProduct_item_content-titlePrice-price {
+  font-family: "IBMPlexText", sans-serif;
+  font-size: 24px;
+  color: #FFCC99;
+}
+.sectionProduct_item_content-text {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  width: 100%;
+  height: 133px;
+}
+.sectionProduct_item_content-guarantees {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.sectionProduct_item_content-guarantees-circle {
+  background: #C4C4C4;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.sectionProduct_item_content-guarantees-circle:first-child {
+  margin-right: 0;
+}
+.sectionProduct_item_content-AddCartQuantity {
+  padding: 20px 0;
+  margin: 20px 0;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionProduct_item_content-AddCartQuantity .quantity-block {
+  /* Для Firefox */
+}
+.sectionProduct_item_content-AddCartQuantity .quantity-block input[type=number]::-webkit-inner-spin-button,
+.sectionProduct_item_content-AddCartQuantity .quantity-block input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.sectionProduct_item_content-AddCartQuantity .quantity-block input[type=number] {
+  -moz-appearance: textfield;
+}
+.sectionProduct_item_content-AddCartQuantity .quantity-block .quantity-arrow-minus {
+  border-radius: 0 20px 20px 0;
+  width: 25px;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-left: -4px;
+}
+.sectionProduct_item_content-AddCartQuantity .quantity-block .quantity-arrow-plus {
+  border-radius: 20px 0 0 20px;
+  width: 25px;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-right: -4px;
+}
+.sectionProduct_item_content-AddCartQuantity .quantity-block .quantity-num {
+  width: 45px;
+  height: 40px;
+  border: 1px solid #F0F0F0;
+  outline: none;
+  text-align: center;
+}
+.sectionProduct_item_content-AddCartQuantity .addCartBtn {
+  background-color: #A52357;
+  width: 520px;
+  height: 40px;
+  color: #fff;
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+.sectionProduct_item_content-afterText {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionProduct_item_content-afterText-text {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+}
+.sectionProduct_item_content-afterText-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionProduct_item_content-afterText-img .small {
+  width: 26px;
+  height: 20px;
+  background-color: #E7E7E7;
+  margin-right: 2px;
+}
+.sectionProduct_item_content-afterText-img .big {
+  width: 33px;
+  height: 20px;
+  background-color: #E7E7E7;
+  margin-right: 2px;
+}
+.sectionProduct .sameProducts {
+  width: 100%;
+}
+.sectionProduct .sameProducts .sectionInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionProduct .sameProducts_items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.sectionProduct .sameProducts_items_item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 275px;
+  height: 466px;
+}
+.sectionProduct .sameProducts_items_item a-img {
+  width: 275px;
+  height: 350px;
+  object-fit: cover;
+}
+.sectionProduct .sameProducts_items_item a .productTitle {
+  font-family: "IBMPlex", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+.sectionProduct .sameProducts_items_item a .productPrice {
+  font-family: "IBMPlexText", sans-serif;
+  font-size: 22px;
+  color: #A52357;
+}
+.sectionProduct .sameProducts_items_item a .productMore {
+  display: block;
+  color: #000;
+  font-family: "Almoni", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.sectionProduct .sameProducts_items_item a .productMore:after {
+  margin-right: 10px;
+  content: ">";
 }
 
 .sectionAbout {
