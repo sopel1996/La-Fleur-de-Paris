@@ -1,8 +1,8 @@
 @import 'mixins.scss';
 .mobMenu{
-    width: 100%;
+    // width: 100%;
     height: toRem(70);
-    background: #474849;
+    // background: #474849;
     padding: toRem(20);
     position: sticky;
     top:0;
@@ -24,20 +24,20 @@
         width: toRem(40);
         height: toRem(40);
         border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(181, 178, 178, 0.7);
         -webkit-transition: 0.4s;
         -moz-transition: 0.4s;
         -o-transition: 0.4s;
         transition: 0.4s;
         &_active{
-            right: toRem(75);
+            right: toRem(60);
         }
       }
       .burger-menu_button:hover .burger-menu_lines {
         filter: brightness(0.7);
       }
       .burger-menu_button:hover {
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(181, 178, 178, 0.7);
       }
       .burger-menu_lines::before,
       .burger-menu_lines::after,
@@ -45,7 +45,7 @@
         position: absolute;
         width: toRem(20);
         height: toRem(2);
-        background-color: #ffffff;
+        background-color: rgb(0, 0, 0);
         -webkit-transition: 0.4s;
         -moz-transition: 0.4s;
         -o-transition: 0.4s;
@@ -84,7 +84,7 @@
         display: flex;
         flex-flow: column;
         height: 100%;
-        background-color: #474849;
+        background-color: #6a6c6d;
         overflow-y: auto;
         right: -100%;
         -webkit-transition: 0.8s;
@@ -100,7 +100,6 @@
         transition: 0.4s;
       }
       .burger-menu_link {
-        @include IBMPlexExtraLight(18);
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 0.1em;

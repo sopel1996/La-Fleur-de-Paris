@@ -93,6 +93,7 @@
         box-shadow: 0 toRem(5) toRem(25) rgba(0, 0, 0, 0.2);
         height: toRem(110);
         z-index: 20;
+        background-color: #fff;
         .sectionInner{
             display: flex;
             flex-direction: row;
