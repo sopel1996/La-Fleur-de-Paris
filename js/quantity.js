@@ -9,15 +9,15 @@ $(function () {
         $quantityArrowPlus.click(quantityPlus);
 
         function quantityMinus(evt) {
+            evt.preventDefault();
             if ($quantityNum.val() > 1) {
                 $quantityNum.val(+$quantityNum.val() - 1);
             }
-            evt.preventDefault();
         }
 
         function quantityPlus(evt) {
-            $quantityNum.val(+$quantityNum.val() + 1);
             evt.preventDefault();
+            $quantityNum.val(+$quantityNum.val() + 1);
         }
     })();
 
