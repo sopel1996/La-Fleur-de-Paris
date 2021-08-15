@@ -10,6 +10,9 @@
     .sectionAbout_content-text{
         width: toRem(390);
     }
+    .sectionProduct_item_content-AddCartQuantity .addCartBtn{
+        width: 300px;
+    }
 }
 @media (max-width: 992px) {
     .sectionAbout_content{
@@ -42,6 +45,29 @@
             margin-top: toRem(12);
         }
     }
+    .sectionProduct_item_content-AddCartQuantity .addCartBtn{
+        height: 30px;
+    }
+    .sectionProduct_item_content-AddCartQuantity .quantity-block .quantity-arrow-minus,
+    .sectionProduct_item_content-AddCartQuantity .quantity-block .quantity-arrow-plus{
+        height: 30px;
+        width: 20px;
+    }
+    .sectionProduct_item_content-AddCartQuantity .quantity-block .quantity-num{
+        height: 30px;
+        width: 30px;
+    }
+    .sectionOrderForm_firstInputField .inputFields, .sectionOrderForm_secondInputField .inputFields{
+        justify-content: center;
+    }
+    .sectionOrderForm_firstInputField .inputFields label,
+    .sectionOrderForm_secondInputField .inputFields label{
+        align-items: center;
+    }
+    .sectionOrderForm .btn{
+        align-self: center;
+    }
+
 }
 @media (max-width: 768px) {
     .mobMenu{
@@ -61,6 +87,7 @@
     .sectionAbout_content-collage{
         width: 100%;
     }
+    
     .sectionFooter .sectionFooter_firstLine .footerList li a{
         font-size: 13px;
     }
@@ -91,8 +118,26 @@
             margin-top: 19px;
         }
     }
+    .sectionProduct_item .sectionInner{
+        flex-direction: column;
+    }
+    .sectionProduct_item_content{
+        width: 100%;
+        margin: 20px 0;
+        height: auto;
+    }
+    .sectionProduct_item_content-text{
+        height: auto;
+
+    }
+    .sectionProduct .sameProducts_items{
+        justify-content: center;
+    }
 }
-@media (max-width: 576px) {
+@media (max-width: 576px) { 
+    .title{
+        text-align: center;
+    }
     .mobMenu .burger-menu_button{
         right: 0;
     }
@@ -114,10 +159,16 @@
         width: 100%
     }
     .sectionHeader_firstLine-phoneSearch .phone{
-        width: 158px;
+        width: 140px;
+        font-size: 17px;
+        &::before{
+            width: 15px;
+            height: 15px;
+        }
     }
+    
     .sectionHeader_firstLine-phoneSearch .search .searchField{
-        width: 158px;
+        width: 140px;
     }
     .sectionBanner_logo{
         width: 90vw;
@@ -145,6 +196,9 @@
         width: 115px;
         // top: 0;
         left: 179px;
+    }
+    .sectionSubscribe_form{
+        width: 100%;
     }
     .sectionForm .form{
         height: auto;
@@ -212,6 +266,83 @@
     }
     .sectionFooter .sectionFooter_secondLine .copyright{
         order: 2;
+    }
+
+    .sectionProduct_item_img{
+        width: 100%;
+        height: 450px;
+        background-size: contain;
+    }
+    .sectionProduct_item_content-AddCartQuantity{
+        flex-direction: column;
+    }
+    .sectionProduct_item_content-AddCartQuantity .quantity-block{
+        margin-bottom: 20px;
+    }
+    .sectionProduct_item_content-afterText{
+        flex-direction: column;
+    }
+    .sectionProduct_item_content-afterText-img{
+        margin-top: 20px;
+    }
+    .sectionTitleText_text{
+        font-size: 16px;
+    }
+    .sectionOrderForm_itemList th,
+    .sectionOrderForm_itemList td{
+        font-size: 13px;
+        &:first-child{
+            padding-right: 5px;
+        }
+    }
+    
+    .sectionOrderForm_itemList .itemQuantity .quantity-arrow-minus,
+    .sectionOrderForm_itemList .itemQuantity .quantity-arrow-plus{
+        width: 20px;
+    }
+    .sectionOrderForm_itemList .itemQuantity .quantity-num{
+        width: 27px;
+    }
+    .sectionOrderForm_itemList .itemImg{
+        display: none;
+    }
+    .sectionOrderForm_itemList .deleteItem{
+        width: 15px;
+        height: 15px;
+    }
+    .sectionOrderForm_itemList .itemName{
+        width: 70px;
+    }
+    .sectionOrderForm_greenLine{
+        height: auto;
+        padding: 5px 0;
+    }
+
+    .sectionOrderForm_greenLine .text{
+        font-size: 15px;
+    }
+
+    .sectionOrderForm_firstInputField .inputFields label,
+    .sectionOrderForm_secondInputField .inputFields label{
+        width: 100%;
+    }
+    .sectionOrderForm_firstInputField .inputFields label input,
+    .sectionOrderForm_secondInputField .inputFields label input{
+        width: 100%;
+    }
+    .sectionOrderForm .btn{
+        width: 100%;
+    }
+    .sectionOrderForm_firstInputField-title,
+    .sectionOrderForm_secondInputField-title{
+        font-size: 30px;
+    }
+    .sectionOrderForm .otherOptions{
+        font-size: 15px;
+    }
+    .sectionTitleText{
+        padding: 0;
+        margin: 20px 0;
     }
 }
 @media (max-width: 360px) {}

@@ -739,6 +739,7 @@ address {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 .sectionProduct .sameProducts_items_item a {
